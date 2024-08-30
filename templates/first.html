@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Drowsy detection</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../static/asset/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome CSS -->
+    <link href="../static/css/font-awesome.min.css" rel="stylesheet">
+    
+    
+    <!-- Animate CSS -->
+    <link href="../static/css/animate.css" rel="stylesheet" >
+    
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" href="../static/css/owl.carousel.css" >
+    <link rel="stylesheet" href="../static/css/owl.theme.css" >
+    <link rel="stylesheet" href="../static/css/owl.transitions.css" >
+
+    <!-- Custom CSS -->
+    <link href="../static/css/styles.css" rel="stylesheet">
+    <link href="../static/css/responsive.css" rel="stylesheet">
+    
+    <!-- Colors CSS -->
+    <link rel="stylesheet" type="text/css" href="../static/css/color/green.css">
+    
+    
+    
+    <!-- Colors CSS -->
+    <link rel="stylesheet" type="text/css" href="../static/css/color/green.css" title="green">
+    <link rel="stylesheet" type="text/css" href="../static/css/color/light-red.css" title="light-red">
+    <link rel="stylesheet" type="text/css" href="../static/css/color/blue.css" title="blue">
+    <link rel="stylesheet" type="text/css" href="../static/css/color/light-blue.css" title="light-blue">
+    <link rel="stylesheet" type="text/css" href="../static/css/color/yellow.css" title="yellow">
+    <link rel="stylesheet" type="text/css" href="../static/css/color/light-green.css" title="light-green">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    
+    
+    <!-- Modernizer js -->
+    <script src="../static/js/modernizr.custom.js"></script>
+
+    
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="index">
+    
+    
+    <!-- Styleswitcher
+================================================== -->
+        <div class="colors-switcher">
+            <a id="show-panel" class="hide-panel"><i class="fa fa-tint"></i></a>        
+                <ul class="colors-list">
+                    <li><a title="Light Red" onClick="setActiveStyleSheet('light-red'); return false;" class="light-red"></a></li>
+                    <li><a title="Blue" class="blue" onClick="setActiveStyleSheet('blue'); return false;"></a></li>
+                    <li class="no-margin"><a title="Light Blue" onClick="setActiveStyleSheet('light-blue'); return false;" class="light-blue"></a></li>
+                    <li><a title="Green" class="green" onClick="setActiveStyleSheet('green'); return false;"></a></li>
+                    
+                    <li class="no-margin"><a title="light-green" class="light-green" onClick="setActiveStyleSheet('light-green'); return false;"></a></li>
+                    <li><a title="Yellow" class="yellow" onClick="setActiveStyleSheet('yellow'); return false;"></a></li>
+                    
+                </ul>
+
+        </div>  
+<!-- Styleswitcher End
+================================================== -->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Drowsy Detection</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{{ url_for('first')}}">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{{ url_for('register')}}">Register</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{{ url_for('login')}}">Login</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    
+    
+    
+    <!-- Start Home Page Slider -->
+    <section id="page-top">
+        <!-- Carousel -->
+        <div id="main-slide" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#main-slide" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slide" data-slide-to="1"></li>
+                <li data-target="#main-slide" data-slide-to="2"></li>
+            </ol>
+            <!--/ Indicators end-->
+
+            <!-- Carousel inner -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img class="img-responsive" src="../static/images/header-bg-1.png" alt="slider">
+                    <div class="slider-content">
+                        <div class="col-md-12 text-center">
+                            <h1 class="animated3">
+                                <span><strong>Detection of </strong> Drowsiness </span>
+                            </h1>
+                            <p class="animated2">in Driver 
+using Custom CNN</p>	
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--/ Carousel item end -->
+                
+                <div class="item">
+                    <img class="img-responsive" src="../static/images/header-bg-1.png" alt="slider">
+                    
+                    <div class="slider-content">
+                        <div class="col-md-12 text-center">
+                            <h1 class="animated3">
+                                <span><strong>Detection of </strong> Drowsiness </span>
+                            </h1>
+                            <p class="animated2">in Driver 
+                                using Custom CNN</p>	
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--/ Carousel item end -->
+                
+                <div class="item">
+                    <img class="img-responsive" src="../static/images/header-bg-1.png" alt="slider">
+                    <div class="slider-content">
+                       <div class="col-md-12 text-center">
+                            <h1 class="animated3">
+                                <span><strong>Detection of </strong> Drowsiness </span>
+                            </h1>
+                            <p class="animated2">in Driver 
+                                using Custom CNN</p>	
+                           
+                        </div>
+                    </div>
+                </div>
+                <!--/ Carousel item end -->
+            </div>
+            <!-- Carousel inner end-->
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#main-slide" data-slide="prev">
+                <span><i class="fa fa-angle-left"></i></span>
+            </a>
+            <a class="right carousel-control" href="#main-slide" data-slide="next">
+                <span><i class="fa fa-angle-right"></i></span>
+            </a>
+        </div>
+        <!-- /carousel -->
+    </section>
+    <!-- End Home Page Slider -->
+
+    
+    
+    
+    
+
+ 
+
+    
+
+    <!-- jQuery Version 2.1.1 -->
+    <script src="../static/js/jquery-2.1.1.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../static/asset/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../static/js/jquery.easing.1.3.js"></script>
+    <script src="../static/js/classie.js"></script>
+    <script src="../static/js/count-to.js"></script>
+    <script src="../static/js/jquery.appear.js"></script>
+    <script src="../static/js/cbpAnimatedHeader.js"></script>
+    <script src="../static/js/owl.carousel.min.js"></script>
+	<script src="../static/js/jquery.fitvids.js"></script>
+	<script src="../static/js/styleswitcher.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="../static/js/jqBootstrapValidation.js"></script>
+    <script src="../static/js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../static/js/script.js"></script>
+
+</body>
+
+</html>

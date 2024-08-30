@@ -1,0 +1,19 @@
+pip install numpy==1.23.5
+pip install tensorflow==2.12.0
+pip install opencv-python==4.7.0.72
+pip install Flask-MySQLdb==1.0.1
+pip install mysql-connector==2.2.9
+pip install mysqlclient==2.2.0
+
+pip install scikit-learn==1.2.2
+pip install seaborn==0.12.2
+pip install matplotlib==3.7.1
+
+pip install Flask==2.2.5
+
+python 3.8
+
+data = 2,467 , categories =4 (Closed Eyes, No Yawn, Open Eyes, Ywan) with Detection 2 Categories of Normal (No Yawn, Open Eyes) & Drowsiness(Closed Eyes, Yawn) 
+accuracy = 99.1%  
+
+ex-user = example , Example@12 (or you can register your own)
